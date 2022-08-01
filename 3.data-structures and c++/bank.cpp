@@ -44,7 +44,7 @@ public:
     void deposite_money(string password, int amount){
         if(this->password == password){
             this->balance -=amount;
-            cout<<"Deposite money successful"<<endl;
+            cout<<"Deposit money successful"<<endl;
         }else{
             cout<<"password did not match"<<endl;
         }
@@ -122,13 +122,26 @@ void add_money_from_bank(MyCash *myCash, BankAccount *myAccount){
 
 int main(){
     BankAccount *myAccount = create_account();
-
-    add_money(myAccount);
-
-    deposite_money(myAccount);
-
     MyCash *myCash = new MyCash();
-    add_money_from_bank(myCash, myAccount);
+
+    while(true){
+        cout<<"Select option: "<<endl;
+        cout<<"1. Add money to bank"<<endl;
+        cout<<"2. Deposit money from bank"<<endl;
+        cout<<"3. Add money to myCash from bank"<<endl;
+        int option;
+        cin>>option;
+        if(option == 1){
+            add_money(myAccount);
+        }else if(option == 2){
+            deposite_money(myAccount);
+        }else if(option == 3){
+            add_money_from_bank(myCash, myAccount);
+        }else{
+            cout<<"invalid option"<<endl;
+        }
+    }
+
     return 0;
 }
 
