@@ -15,9 +15,9 @@ There will also be ideas on deployment, server side hosting, database hosting, b
 
 `1st Semester (10 credits)`
 
-1. Introduction to Computer and Scratch Programming(1 Credit)
-2. Introduction to Programming Language(3 Credits)
-3. Problem Solving Part-I (1.5 Credits)
+1. Introduction to Computer and Scratch Programming(1 Credit)(done)
+2. Introduction to Programming Language(3 Credits)(done)
+3. Problem Solving Part-I (1.5 Credits)(done)
 4. Basic Data Structures (3 Credits)
 5. Problem Solving Part-II (1.5 Credits)
 
