@@ -1,0 +1,4 @@
+# Ignore files with extension .o and .exe
+*.o
+*.exe
+!/**/

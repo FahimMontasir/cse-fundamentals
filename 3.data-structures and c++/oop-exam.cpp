@@ -8,6 +8,11 @@ public:
     int food_item_prices[12];
 protected:
     int total_tax;
+};
+
+int main() {
+    cout <<"hello world"<<endl;
+    cout<<"im fahim"<<endl;
+
+    return 0;
 }
-
-
