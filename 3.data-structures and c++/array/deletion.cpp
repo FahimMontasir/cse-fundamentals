@@ -25,26 +25,25 @@ int main(){
   int pos, value;
   cout<<"Value of pos: ";
   cin>>pos;
-  cout<<"Value of the Insertion:";
-  cin>>value;
 
-  if (pos<0 || pos> size)
+  if (pos<0 || pos>size-1)
   {
     cout<<"invalid index";
   }
   else
-  {
-  // size1 (4) ---> pos (2) swapping
-    // for (int i = size-1; i >= pos; i--)
-    // {
-    //   array[i+1]= array[i];
-    // }
-    // size ----> pos (5) ----> (2)
-    array[size]= array[pos];
-    array[pos] = value;
+  { // last pos
+    if(pos==size-1) size--;
+    else{
+      // pos+1 ---> size-1 //start pos or mid pos
+      for (int i = pos+1; i < size; i++)
+      {
+        array[i-1] = array[i];
+      }
+      size--;
+    }
   }
 
-  cout<<"Array after the insertion: ";
-  PrintArray(array, size+1);
+  cout<<"Array after the deletion: ";
+  PrintArray(array, size);
   return 0;
 }
