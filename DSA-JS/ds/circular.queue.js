@@ -67,7 +67,13 @@ circularQueue.enqueue(1);
 circularQueue.enqueue(50);
 
 circularQueue.dequeue();
+circularQueue.dequeue();
+circularQueue.dequeue();
 
 circularQueue.enqueue(0);
+circularQueue.enqueue(5);
+circularQueue.enqueue(9);
+
+console.log(circularQueue.peek());
 
 circularQueue.print();
