@@ -1,18 +1,13 @@
+// O(n^2)
 const insertionSort = (arr) => {
-  const size = arr.length;
-
-  for (let step = 1; step < size; step++) {
-    let key = arr[step];
-    let j = step - 1;
-
-    // Compare key with each element on the left of it until an element smaller than
-    // it is found.
-    while (j >= 0 && key < arr[j]) {
+  for (let i = 1; i < arr.length; i++) {
+    let numberToInsert = arr[i];
+    let j = i - 1;
+    while (j >= 0 && arr[j] > numberToInsert) {
       arr[j + 1] = arr[j];
-      j--;
+      j = j - 1;
     }
-    // Place key at after the element just smaller than it.
-    arr[j + 1] = key;
+    arr[j + 1] = numberToInsert;
   }
 };
 

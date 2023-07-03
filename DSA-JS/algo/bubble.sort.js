@@ -1,34 +1,22 @@
-// perform the bubble sort
+// O(n^2)
 const bubbleSort = (arr) => {
-  const size = arr.length;
-  // loop thru to access the array elements
-  for (let i = 0; i < size - 1; i++) {
-    let swapped = false;
-    // loop to compare array elements
-    for (let j = 0; j < size - i - 1; j++) {
-      // compare two adjacent elements
-      // change -> to sort in descending order
-      if (arr[j] > arr[j + 1]) {
-        // swapping occurs if elements
-        // are not in the intended order
-        const temp = arr[j];
-        arr[j] = arr[j + 1];
-        arr[j + 1] = temp;
-
+  let swapped;
+  do {
+    swapped = false;
+    for (let i = 0; i < arr.length - 1; i++) {
+      if (arr[i] > arr[i + 1]) {
+        let temp = arr[i];
+        arr[i] = arr[i + 1];
+        arr[i + 1] = temp;
         swapped = true;
       }
     }
-    // no swapping means the array is already sorted
-    // so no need for further comparison
-    if (!swapped) {
-      break;
-    }
-  }
+  } while (swapped);
 };
 
 const arr = [4, 1, -3, 5];
 const arr2 = [1, 2, 5, 7];
 
 // bubbleSort(arr);
-bubbleSort(arr2);
-console.log(arr2);
+bubbleSort(arr);
+console.log(arr);

@@ -1,3 +1,4 @@
+// O(nlogn)
 const mergeSort = (arr) => {
   if (arr.length < 2) {
     return arr;
@@ -23,6 +24,4 @@ const merge = (leftArr, rightArr) => {
   return [...sortedArr, ...leftArr, ...rightArr];
 };
 
-const arr = [8, 20, -2, 4, -6];
-
-console.log(mergeSort(arr));
+console.log(mergeSort([8, 20, -2, 4, -6]));
