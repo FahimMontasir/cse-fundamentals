@@ -1,0 +1,5 @@
+terminal basic:
+to check dir name -> pwd
+to change dir -> cd
+to check files and folders -> ls
+
