@@ -1,5 +1,47 @@
-terminal basic:
+#terminal basic:
 to check dir name -> pwd
 to change dir -> cd
 to check files and folders -> ls
+to create a new directory -> mkdir
+to remove a directory -> rmdir
+to create a new file -> touch
+to display the contents of a file -> cat
+to write contents in a file -> echo
+to write contents in a file using nano text editor -> nano [filename]
+to remove a file -> rm
+to copy a file -> cp
+to move or rename a file -> mv
+to search for a specific pattern in a file -> grep
+to display the last part of a file -> tail
+to display the first part of a file -> head
+to display who is logged on -> who
+to display your username -> whoami
+to display system information -> uname -a
+to display disk usage -> df
+to display directory space usage -> du
+to display running processes -> ps
+to stop a running process -> kill
+to change file permissions -> chmod
+to change file ownership -> chown
+to change file group ownership -> chgrp
 
+#network commands & sudo privileges
+to get network info -> ifconfig
+to execute something as a root user -> sudo
+to run everything as sudo -> sudo su
+to display routing table -> netstat -r
+to display all network connections -> netstat -a
+to display network statistics -> netstat -s
+to ping a host -> ping
+to perform a traceroute to a host -> traceroute
+to lookup the IP address of a host -> nslookup
+to lookup the DNS name of an IP address -> dig -x
+to change or view the system hostname -> hostname
+to download files from the internet -> wget
+to download files from the internet with a user-friendly interface -> curl
+to scan network and ports -> nmap
+to edit the sudoers file -> visudo
+to list a user's sudo privileges -> sudo -l
+to execute a command as another user -> sudo -u
+to switch to another user -> su
+to switch to the root user -> su -
