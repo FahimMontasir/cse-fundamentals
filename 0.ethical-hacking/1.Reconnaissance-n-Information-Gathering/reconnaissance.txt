@@ -1,9 +1,0 @@
-Social engineering is a technique used to manipulate individuals into revealing sensitive information or performing actions that may compromise security. It involves exploiting human psychology rather than technical vulnerabilities. Reconnaissance, on the other hand, refers to the process of gathering information about a target system or network to identify potential vulnerabilities and weaknesses. It is an essential step in the planning phase of an attack.
-
-#active information gathering: 
-ping [any website url] or nslookup [website url] -> to get ip address of It
-whois [address] -> to get more details about the domain
-
-#passive information gathering: 
-using google search
-useful for ip check -> https://ipinfo.info/html/ip_checker.php
