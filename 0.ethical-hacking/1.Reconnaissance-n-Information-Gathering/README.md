@@ -10,14 +10,24 @@ Social engineering is a technique used to manipulate individuals into revealing 
 - using google search
 - useful for ip check -> https://ipinfo.info/html/ip_checker.php
 
-# tools
-
-## WhatWeb
+# WhatWeb
 
 - whatweb --help => for all commands
 - whatweb moontasir.web.app => will tell me loads of info about the given url
 - whatweb [url] -v => verbose prettier print
 - whatweb [url/ip] --aggression 3 -v --no-errors => using high aggression level
+
+# gathering emails
+
+- harvester and hunter.io
+- theHarvester --help => to know all of its commands
+- theHarvester -d [domain] -b all
+- hunter.io => this website will give more emails (but not free)
+
+# gather more info
+
+- use github open source packages (e.g. search-> information gathering tools github)
+- sherlock => hunt down social media accounts by username
 
 ### important note
 
