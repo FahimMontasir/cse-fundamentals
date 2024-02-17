@@ -45,3 +45,16 @@ to list a user's sudo privileges -> sudo -l
 to execute a command as another user -> sudo -u
 to switch to another user -> su
 to switch to the root user -> su -
+
+# note on linux file system and additional commands
+How WELL do you think you know terminal commands or Linux File System?
+If you want to know even more about how Linux is structured and what each of /home, /var, /etc .. directories are, you can take a look at this link right here explaining Linux Files Tree and discussing about each directory a little bit.
+https://www.linux.com/training-tutorials/linux-filesystem-explained/
+Another thing you might want to learn is different terminal commands. Even though we covered some of them and we will cover even more throughout the course it is still good to practice all of the things we covered in this section and perhaps learn 1 or 2 new commands! 
+Remember, terminal is THE MOST IMPORTANT tool that you will use as a penetration tester!
+https://ubuntu.com/tutorials/command-line-for-beginners#1-overview
+
+# getting familiar with kali linux
+Okay, We performed the needed setup. But for many of you this will be something new and you aren't really that familiar with Kali Linux or Linux Operating System in general. Don't worry! In the next section we will be covering some of the Linux basics and terminal basics so you will fully understand all the commands that we ran in previous video and many more! However you also might want to check out some of the things that you could do after installing Kali Linux:
+https://www.ceos3c.com/hacking/top-things-after-installing-kali-linux/
+Take a look at this page for more information as to what you can do after installation, keep in mind that some of the things we will cover later in the course, but if you feel comfortable doing them now go ahead! Nonetheless now that we have everything ready, Lets talk about process of a Penetration Test!
