@@ -36,3 +36,25 @@ when speed is desirable and error correction isn't necessary, such as streaming 
 - Ordered: No
 - Speed: Faster than TCP
 - Use cases: Streaming media (video, audio), online multiplayer games, Voice over IP (VoIP)
+
+## tools for scanning
+
+### arp (Address Resolution Protocol):
+
+arp is a command-line utility that displays and modifies the Address Resolution Protocol (ARP) cache.
+
+- arp --help : Display help message
+- arp -a : Display all the hosts
+
+### netdiscover:
+
+- netdiscover : Discovers hosts / devices on the network
+
+### nmap:
+
+nmap is a free and open-source network scanner created by Gordon Lyon. It is used to discover hosts and
+services on a computer network, thus creating a "map" of the network. To accomplish its goal, nmap sends
+specially crafted packets to the target host and then analyzes the responses.
+
+- nmap --help : Display help message
+- nmap [ip/network] : Scan a single IP address
