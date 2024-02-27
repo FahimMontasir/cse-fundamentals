@@ -52,9 +52,15 @@ arp is a command-line utility that displays and modifies the Address Resolution 
 
 ### nmap:
 
+##### [namp cheatsheet](https://zerotomastery.io/cheatsheets/nmap-cheat-sheet/?utm_source=udemy&utm_medium=coursecontent)
+
 nmap is a free and open-source network scanner created by Gordon Lyon. It is used to discover hosts and
 services on a computer network, thus creating a "map" of the network. To accomplish its goal, nmap sends
 specially crafted packets to the target host and then analyzes the responses.
 
 - nmap --help : Display help message
 - nmap [ip/network] : Scan a single IP address
+- nmap -sS [ip/network] : Perform a TCP SYN scan
+- name -sT [ip/network] : Perform a TCP connect scan (perform full tcp connection)
+- nmap -sU [ip/network] : Perform a UDP scan
+- man nmap : Display the manual page for nmap

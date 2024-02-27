@@ -1,4 +1,8 @@
-Social engineering is a technique used to manipulate individuals into revealing sensitive information or performing actions that may compromise security. It involves exploiting human psychology rather than technical vulnerabilities. Reconnaissance, on the other hand, refers to the process of gathering information about a target system or network to identify potential vulnerabilities and weaknesses. It is an essential step in the planning phase of an attack.
+Social engineering is a technique used to manipulate individuals into revealing sensitive information
+or performing actions that may compromise security. It involves exploiting human psychology rather than
+technical vulnerabilities. Reconnaissance, on the other hand, refers to the process of gathering information
+about a target system or network to identify potential vulnerabilities and weaknesses. It is an essential
+step in the planning phase of an attack.
 
 # active information gathering:
 
@@ -31,7 +35,13 @@ Social engineering is a technique used to manipulate individuals into revealing 
 
 ### important note
 
-Alright, we just started introducing ourselves to different tools that are used for information gathering. But it is important to widen our tool collection as much as possible. We want to know different tools that do same things .. Why you might be asking ? Well tools are unreliable, and sometimes one of them will break, or it wont give us result that we want. In that case it is good to have a backup plan just to be able to get information that you want. For example in the next video you will see a scenario where one of the tool fails, and you will notice that we didn't just quit once we got no results with that tool. We found another alternative that gave us the results that we want. So what is important to learn out of this ?
+Alright, we just started introducing ourselves to different tools that are used for information gathering.
+But it is important to widen our tool collection as much as possible. We want to know different tools that
+do same things .. `Why you might be asking?` Well tools are unreliable, and sometimes one of them will break,
+or it wont give us result that we want. In that case it is good to have a backup plan just to be able to get
+information that you want. For example in the next video you will see a scenario where one of the tool
+fails, and you will notice that we didn't just quit once we got no results with that tool. We found another
+alternative that gave us the results that we want. So what is important to learn out of this?
 `Sometimes Tools Will Break Or Not Work!`
 
 ### more information gathering
