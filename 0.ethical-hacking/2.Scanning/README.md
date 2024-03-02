@@ -61,6 +61,10 @@ specially crafted packets to the target host and then analyzes the responses.
 - nmap --help : Display help message
 - nmap [ip/network] : Scan a single IP address
 - nmap -sS [ip/network] : Perform a TCP SYN scan
-- name -sT [ip/network] : Perform a TCP connect scan (perform full tcp connection)
+- nmap -sT [ip/network] : Perform a TCP connect scan (perform full tcp connection)
 - nmap -sU [ip/network] : Perform a UDP scan
 - man nmap : Display the manual page for nmap
+- nmap -O [ip] : OS detection
+- nmap -sV [ip] : Version of the service detection
+- nmap -sV --version-intensity 9 [ip] : Version of the service detection with intensity level 9 (1-9)
+- nmap -A [ip] : Aggressive scan
