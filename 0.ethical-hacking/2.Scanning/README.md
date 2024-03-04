@@ -68,3 +68,40 @@ specially crafted packets to the target host and then analyzes the responses.
 - nmap -sV [ip] : Version of the service detection
 - nmap -sV --version-intensity 9 [ip] : Version of the service detection with intensity level 9 (1-9)
 - nmap -A [ip] : Aggressive scan
+- nmap -sn [ip]
+- nmap -p [port] [ip]: target only specified port
+- nmap -F [ip] : Fast scan
+- nmap -sS [ip] >> output.txt : Save the output to a file
+- nmap -sS [ip] -oN output.txt : Save the output to a file
+
+### firewalls and ids:
+
+A firewall is a network security system that monitors and controls incoming and outgoing network traffic
+based on predetermined security rules. It establishes a barrier between a trusted internal network and
+untrusted external network, such as the Internet. An Intrusion Detection System (IDS) is a device or
+software application that monitors a network or systems for malicious activity or policy violations.
+Any detected activity or violation is typically reported either to an administrator or collected centrally
+in a security information and event management (SIEM) system.
+
+- nmap -D RND:[number of random port] [ip] : Scan through decoy
+- nmap -D [ip,ip,ip...] [target ip]: Scan through decoy
+
+### other info
+
+We obtained all of the information we need to attack our target, from what Operating Systems it has to
+which ports it has open and which software it has running on those open ports. We even went as deep as
+discovering the version of the software.
+
+However before we actually attack the target and try to exploit it there is one more step to perform
+which is called Vulnerability Analysis. Thats right, we have all the information we need but now in
+Vulnerability Analysis we are going to see if those programs that are running on the target machine are
+fully secured or if they might have some security flaw ? Maybe they are outdated ? We don't know that
+yet! All of this we will see in the Vulnerability Analysis.
+
+But before we perform vulnerability analysis we are going to do a small project. And not just any
+project but out first coding project!
+
+We are going to see how we can create a simple Portscanner using Python 3.
+
+And by the way for all of you that are not a fan of command line tools, you can check out a tool
+exactly the same as nmap, it just has a graphical user interface! The tool is called Zenmap.
