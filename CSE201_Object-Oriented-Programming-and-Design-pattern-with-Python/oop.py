@@ -84,3 +84,92 @@ class Parrot(Pet, Bird):
     print('Squawk')
 
 # dry -> do not repeat yourself
+    
+
+# abstract base class
+from abc import ABC, abstractmethod
+
+class Shape(ABC):
+  @abstractmethod
+  def area(self):
+    pass
+
+class Square(Shape):
+  def __init__(self, side):
+    self.side = side
+  def area(self):
+    return self.side * self.side
+  
+# abstract property and abstraction vs interface
+
+# This is an example of an abstract class (abstraction)
+class AbstractClassExample(ABC):
+  @abstractmethod
+  def do_something(self):
+    pass
+
+  @property
+  @abstractmethod
+  def some_property(self):
+    pass
+
+# This is an example of a class implementing the abstract class (interface)
+class AnotherClass(AbstractClassExample):
+  _some_property = "Hello, World!"
+
+  @property
+  def some_property(self):
+    return self._some_property
+
+  def do_something(self):
+    super().do_something()
+    print("The subclass is doing something")
+
+# Trying to instantiate an object of abstract class would raise an error
+# So the following line should be commented
+# an_abstract_class = AbstractClassExample()
+
+# An object of the AnotherClass can be created
+another_class = AnotherClass()
+print(another_class.some_property)
+another_class.do_something()
+
+# encapsulation
+class Car:
+  def __init__(self, name, model, price) -> None:
+    self.__name = name
+    self.__model = model
+    self.__price = price
+  def get_price(self):
+    return self.__price
+  def set_price(self, price):
+    self.__price = price
+
+# access modifiers -> public, private, protected
+    
+# polymorphism -> overloading, overriding
+class Animal:
+  def __init__(self, name) -> None:
+    self.name = name
+  def make_sound(self):
+    pass
+
+class Dog(Animal):
+  def make_sound(self):
+    print('Woof')
+
+
+# read only property, property deleter
+class Person:
+  def __init__(self, name, age) -> None:
+    self.__name = name
+    self.__age = age
+  @property
+  def name(self):
+    return self.__name
+  @property
+  def age(self):
+    return self.__age
+  @age.deleter
+  def age(self):
+    del self.__age
