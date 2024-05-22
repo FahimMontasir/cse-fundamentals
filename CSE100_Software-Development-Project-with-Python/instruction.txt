@@ -1,0 +1,36 @@
+# to create virtual environment
+
+step 1: installing virtualenv (already installed):
+$ pip3 install virtualenv
+
+step 2: test my installation
+$ virtualenv --version
+
+step 3: Naming virtual env:
+$ virtualenv my_env
+
+step 4: Activating virtual env:
+$ source ./my_env/Scripts/activate or ./my_env/bin/activate
+
+step 5: Deactivating virtual env:
+$ deactivate
+
+
+
+# django specific command
+
+- check django version
+$ python3 -m django --version
+
+- install django
+$ python3 -m pip install Django
+
+- start project
+$ django-admin startproject first_project
+
+- to run the local server
+$ cd first_project
+$ python3 manage.py runserver
+
+- to create application inside a project 
+$ django-admin startapp app_name
