@@ -34,3 +34,10 @@ $ python3 manage.py runserver
 
 - to create application inside a project 
 $ django-admin startapp app_name
+
+- to create table or apply changes of models 
+$ python3 manage.py makemigrations
+$ python3 manage.py migrate
+
+- to create superuser for admin pannel
+$ python3 manage.py createsuperuser
