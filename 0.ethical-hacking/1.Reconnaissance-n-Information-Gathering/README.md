@@ -31,21 +31,24 @@ step in the planning phase of an attack.
 # gather more info
 
 - use github open source packages (e.g. search-> information gathering tools github)
-- sherlock => hunt down social media accounts by username
 
-### important note
+## [sherlock](https://github.com/sherlock-project/sherlock)
 
-Alright, we just started introducing ourselves to different tools that are used for information gathering.
-But it is important to widen our tool collection as much as possible. We want to know different tools that
-do same things .. `Why you might be asking?` Well tools are unreliable, and sometimes one of them will break,
-or it wont give us result that we want. In that case it is good to have a backup plan just to be able to get
-information that you want. For example in the next video you will see a scenario where one of the tool
-fails, and you will notice that we didn't just quit once we got no results with that tool. We found another
-alternative that gave us the results that we want. So what is important to learn out of this?
-`Sometimes Tools Will Break Or Not Work!`
+- hunt down social media accounts by username
+- $ sherlock [username username username ...] : to search for multiple usernames
 
-### more information gathering
+## [phoneinfoga](https://sundowndev.github.io/phoneinfoga/getting-started/usage/)
 
-- Information Gathering Finished! First step down. But you should never limit yourself to only the tools we cover in the course. There are many more out there and some could be even better for you than these. At this link right here you can take a look at top 25 OSIN (Open Source Intelligence) Tools and feel free to test all of them out! Some of them we have covered, some of them you will need to download but that is how you practice.(Just if you go through all of them, make sure you skip "Nmap" as that is something we cover in great details in the next section):
-- https://securitytrails.com/blog/osint-tools
-- We also took a look at our own tool used for gathering information, and we got really good results with it! The more we go through the course the more we need to get into creating our own tools as that eventually becomes a part of being an ethical hacker. Here are some good news! At the and of the course we have added bonus sections that cover Python Programming Basics so all of you that never had any programming experience can go through those videos first and then get into the coding projects! But more about that later. Right now we are ready to cover one of the biggest tools Ethical Hackers use which is called Nmap, and we are going to do that in the next section that covers Scanning!
+- phone number information gathering tool (not best for bd)
+- $ phoneinfoga scan -n ["phone number"] : to scan a phone number
+- $ phoneinfoga serve -p 8080 : to start a web server
+
+## [RED_HAWK](https://github.com/Tuhinshubhra/RED_HAWK?tab=readme-ov-file)
+
+- RED_HAWK is An All In One Tool For Information Gathering, SQL Vulnerability Scannig and Crawling
+- $ php rhawk.php : to start the tool
+-
+
+## [OSINT](https://securitytrails.com/blog/osint-tools)
+
+### [READ MORE](https://github.com/sundowndev/hacker-roadmap?tab=readme-ov-file)
